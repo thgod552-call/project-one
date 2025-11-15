@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Services - Dentiva Dental Care">
+  <Navigation client:load />
+  
+  <main className="bg-white">
+    {/* Hero Section with Brown Background and Image Overlay */}
+    <section className="relative pt-32 pb-40 bg-[#9A3D32] overflow-hidden">
+      {/* Background Image with Opacity */}
+      <div className="absolute inset-0 opacity-30">
+        <img
+          src="/images/a child.png"
+          alt="Background"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+      
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold text-white">
+          Our Services
+        </h1>
+      </div>
+    </section>
+
+    {/* Services Grid */}
+    <section className="py-20 md:py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Service 1 - Wisdom Extraction */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-80 cursor-pointer">
+            <img
+              src="/images/a child.png"
+              alt="Wisdom Extraction"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-white/25 backdrop-blur-md text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/40">
+                Wisdom Extraction
+              </span>
+            </div>
+            
+            {/* Description */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <p className="text-sm leading-relaxed">
+                Wisdom tooth extraction is a common in the procedure to remove one or more of the third molars — the last set of teeth to emerge.
+              </p>
+            </div>
+          </div>
+
+          {/* Service 2 - Tooth Contouring */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-80 cursor-pointer">
+            <img
+              src="/images/a girl.png"
+              alt="Tooth Contouring"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-white/25 backdrop-blur-md text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/40">
+                Tooth Contouring
+              </span>
+            </div>
+            
+            {/* Description */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <p className="text-sm leading-relaxed">
+                Tooth contouring, also known as enamel shaping, is a quick and painless cosmetic procedure that gently reshapes your.
+              </p>
+            </div>
+          </div>
+
+          {/* Service 3 - Oral Hygiene */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-80 cursor-pointer">
+            <img
+              src="/images/doctor1.png"
+              alt="Oral Hygiene"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-white/25 backdrop-blur-md text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/40">
+                Oral Hygiene
+              </span>
+            </div>
+            
+            {/* Description */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <p className="text-sm leading-relaxed">
+                Oral hygiene is the foundation of a healthy smile. Maintaining good oral hygiene not only keeps your teeth and gums clean.
+              </p>
+            </div>
+          </div>
+
+          {/* Service 4 - Retainer Fitting */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-80 cursor-pointer">
+            <img
+              src="/images/doctor2.png"
+              alt="Retainer Fitting"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-white/25 backdrop-blur-md text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/40">
+                Retainer Fitting
+              </span>
+            </div>
+            
+            {/* Description */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <p className="text-sm leading-relaxed">
+                After orthodontic treatment, retainers are essential to maintain your newly aligned smile. Our custom retainer fitting ensures.
+              </p>
+            </div>
+          </div>
+
+          {/* Service 5 - Periodontal Therapy */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-80 cursor-pointer">
+            <img
+              src="/images/dental.png"
+              alt="Periodontal Therapy"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-white/25 backdrop-blur-md text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/40">
+                Periodontal Therapy
+              </span>
+            </div>
+            
+            {/* Description */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <p className="text-sm leading-relaxed">
+                Periodontal Therapy is a specialized treatment focused on the health of your gums and the structures supporting your teeth.
+              </p>
+            </div>
+          </div>
+
+          {/* Service 6 - Root Sealants */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-80 cursor-pointer">
+            <img
+              src="/images/a child.png"
+              alt="Root Sealants"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-white/25 backdrop-blur-md text-white text-xs font-bold px-4 py-1.5 rounded-full border border-white/40">
+                Root Sealants
+              </span>
+            </div>
+            
+            {/* Description */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <p className="text-sm leading-relaxed">
+                With years of hands-on experience across multiple sectors, we bring deep industry knowledge, technical skill.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Load More Button */}
+        <div className="flex justify-center mt-12">
+          <button className="bg-[#9A3D32] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#8B3A2E] transition text-sm shadow-md hover:shadow-lg">
+            Load More
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

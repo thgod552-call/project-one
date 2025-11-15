@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Our Doctors - Dentiva Dental Care">
+  <Navigation client:load />
+  
+  <main className="bg-white">
+    {/* Hero Section with Brown Background and Image Overlay */}
+    <section className="relative pt-32 pb-40 bg-[#9A3D32] overflow-hidden">
+      {/* Background Image with Opacity */}
+      <div className="absolute inset-0 opacity-30">
+        <img
+          src="/images/a child.png"
+          alt="Background"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+      
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold text-white">
+          Our Doctors
+        </h1>
+      </div>
+    </section>
+
+    {/* Doctors Grid */}
+    <section className="py-20 md:py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Doctor 1 */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-96 cursor-pointer">
+            <img
+              src="/images/doctor1.png"
+              alt="Dr. James Mitchell"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Doctor Info */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 className="text-xl font-bold mb-1">Dr. James Mitchell</h3>
+              <p className="text-sm text-gray-200">Senior Dentist</p>
+              <p className="text-xs text-gray-300 mt-2">
+                20+ years of experience in restorative and cosmetic dentistry.
+              </p>
+            </div>
+          </div>
+
+          {/* Doctor 2 */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-96 cursor-pointer">
+            <img
+              src="/images/doctor2.png"
+              alt="Dr. Sarah Anderson"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Doctor Info */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 className="text-xl font-bold mb-1">Dr. Sarah Anderson</h3>
+              <p className="text-sm text-gray-200">Orthodontist</p>
+              <p className="text-xs text-gray-300 mt-2">
+                Specialist in teeth alignment and bite correction.
+              </p>
+            </div>
+          </div>
+
+          {/* Doctor 3 */}
+          <div className="relative group rounded-3xl overflow-hidden shadow-lg h-96 cursor-pointer">
+            <img
+              src="/images/dental.png"
+              alt="Dr. Michael Chen"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+            
+            {/* Doctor Info */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 className="text-xl font-bold mb-1">Dr. Michael Chen</h3>
+              <p className="text-sm text-gray-200">Implant Specialist</p>
+              <p className="text-xs text-gray-300 mt-2">
+                Expert in dental implants and surgical procedures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* View All Button */}
+        <div className="flex justify-center mt-12">
+          <button className="bg-[#9A3D32] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#8B3A2E] transition text-sm shadow-md hover:shadow-lg">
+            View All Doctors
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>
